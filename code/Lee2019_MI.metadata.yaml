@@ -1,0 +1,256 @@
+_dataset:
+  class: Lee2019_MI
+  code: Lee2019-MI
+  doi: 10.5524/100542
+  interval:
+  - 0.0
+  - 4.0
+  n_subjects: 54
+  paradigm: imagery
+abstract: 'Electroencephalography (EEG)-based brain-computer interface (BCI) systems are mainly divided into three major paradigms:
+  motor imagery (MI), event-related potential (ERP), and steady-state visually evoked potential (SSVEP). Here, we present
+  a BCI dataset that includes the three major BCI paradigms with a large number of subjects over multiple sessions. In addition,
+  information about the psychological and physiological conditions of BCI users was obtained using a questionnaire, and task-unrelated
+  parameters such as resting state, artifacts, and electromyography of both arms were also recorded. We evaluated the decoding
+  accuracies for the individual paradigms and determined performance variations across both subjects and sessions. Furthermore,
+  we looked for more general, severe cases of BCI illiteracy than have been previously reported in the literature. Average
+  decoding accuracies across all subjects and sessions were 71.1% (± 0.15), 96.7% (± 0.05), and 95.1% (± 0.09), and rates
+  of BCI illiteracy were 53.7%, 11.1%, and 10.2% for MI, ERP, and SSVEP, respectively. Compared to the ERP and SSVEP paradigms,
+  the MI paradigm exhibited large performance variations between both subjects and sessions. Furthermore, we found that 27.8%
+  (15 out of 54) of users were universally BCI literate, i.e., they were able to proficiently perform all three paradigms.
+  Interestingly, we found no universally illiterate BCI user, i.e., all participants were able to control at least one type
+  of BCI system.'
+acquisition:
+  auxiliary_channels:
+    emg_channels: 4
+    has_emg: true
+  channel_types:
+    eeg: 62
+    emg: 4
+  ground: AFz
+  hardware: BrainAmp
+  impedance_threshold_kohm: 10.0
+  line_freq: 60.0
+  montage: standard_1005
+  n_channels: 62
+  reference: nasion
+  sampling_rate: 1000.0
+  sensor_type: Ag/AgCl
+  sensors:
+  - AF3
+  - AF4
+  - AF7
+  - AF8
+  - C1
+  - C2
+  - C3
+  - C4
+  - C5
+  - C6
+  - CP1
+  - CP2
+  - CP3
+  - CP4
+  - CP5
+  - CP6
+  - CPz
+  - Cz
+  - EMG1
+  - EMG2
+  - EMG3
+  - EMG4
+  - F10
+  - F3
+  - F4
+  - F7
+  - F8
+  - F9
+  - FC1
+  - FC2
+  - FC3
+  - FC4
+  - FC5
+  - FC6
+  - FT10
+  - FT9
+  - FTT10h
+  - FTT9h
+  - Fp1
+  - Fp2
+  - Fz
+  - O1
+  - O2
+  - Oz
+  - P1
+  - P2
+  - P3
+  - P4
+  - P7
+  - P8
+  - PO10
+  - PO3
+  - PO4
+  - PO9
+  - POz
+  - Pz
+  - T7
+  - T8
+  - TP10
+  - TP7
+  - TP8
+  - TP9
+  - TPP10h
+  - TPP8h
+  - TPP9h
+  - TTP7h
+bci_application:
+  applications:
+  - motor_control
+  environment: laboratory
+  online_feedback: true
+cross_validation:
+  cv_method: train-test split
+  evaluation_type:
+  - within_session
+  - cross_session
+data_structure:
+  n_trials: 200
+  n_trials_per_class:
+    left_hand: 100
+    right_hand: 100
+  trials_context: '100 trials per session per phase (50 per class per phase). Training: 50 left + 50 right. Test: 50 left
+    + 50 right. Total per session: 200.'
+documentation:
+  contact_info:
+  - sw.lee@korea.ac.kr
+  country: KR
+  description: 'EEG dataset and OpenBMI toolbox for three BCI paradigms: an investigation into BCI illiteracy. Includes MI,
+    ERP, and SSVEP paradigms with a large number of subjects over multiple sessions.'
+  doi: 10.1093/gigascience/giz002
+  how_to_acknowledge: This is an Open Access article distributed under the terms of the Creative Commons Attribution License
+    (http://creativecommons.org/licenses/by/4.0/), which permits unrestricted reuse, distribution, and reproduction in any
+    medium, provided the original work is properly cited.
+  institution: Korea University
+  institution_address: 145 Anam-ro, Seongbuk-gu, Seoul, 02841, Korea
+  institution_department: Department of Brain and Cognitive Engineering
+  investigators:
+  - Min-Ho Lee
+  - O-Yeon Kwon
+  - Yong-Jeong Kim
+  - Hong-Kyung Kim
+  - Young-Eun Lee
+  - John Williamson
+  - Siamac Fazli
+  - Seong-Whan Lee
+  keywords:
+  - EEG datasets
+  - brain-computer interface
+  - event-related potential
+  - steady-state visually evoked potential
+  - motor-imagery
+  - OpenBMI toolbox
+  - BCI illiteracy
+  license: GPL-3.0
+  publication_year: 2019
+  repository: GigaDB
+  senior_author: Seong-Whan Lee
+experiment:
+  class_labels:
+  - left_hand
+  - right_hand
+  events:
+    left_hand: 2
+    right_hand: 1
+  feedback_type: visual
+  has_training_test_split: true
+  hed_tags:
+    left_hand: (Sensory-event, Experimental-stimulus, Visual-presentation, (Leftward, Arrow)), (Agent-action, (Imagine, Move,
+      (Left, Hand)))
+    right_hand: (Sensory-event, Experimental-stimulus, Visual-presentation, (Rightward, Arrow)), (Agent-action, (Imagine,
+      Move, (Right, Hand)))
+  instructions: Subjects performed the imagery task of grasping with the appropriate hand for 4 s when the right or left arrow
+    appeared as a visual cue. First 3 s of each trial began with a black fixation cross to prepare subjects for the MI task.
+    After each task, the screen remained blank for 6 s (± 1.5 s).
+  mode: both
+  n_classes: 2
+  paradigm: imagery
+  primary_modality: visual
+  stimulus_modalities:
+  - visual
+  stimulus_type: arrow
+  study_design: Binary-class motor imagery (left/right hand grasping). Two sessions on different days, each with offline training
+    and online test phases of 100 trials each.
+  synchronicity: synchronous
+  tasks:
+  - MI
+  trial_duration: 4.0
+file_format: MAT
+methodology: 'Experimental procedure: 54 healthy subjects participated in two sessions on different days. Each session consisted
+  of three BCI paradigms performed sequentially: ERP speller (36 symbols, row-column presentation with face stimuli), MI task
+  (binary left/right hand imagery), and SSVEP (four target frequencies: 5.45, 6.67, 8.57, 12 Hz). Each paradigm had offline
+  training and online test phases. EEG recorded at 1000 Hz with 62 Ag/AgCl electrodes using BrainAmp amplifier, nose-referenced,
+  grounded to AFz. Impedance maintained below 10 kOhm. Subjects seated 60 cm from 21-inch LCD monitor. Questionnaires collected
+  demographic, physiological, and psychological data. Artifact data (eye blinking, eye movements, teeth clenching, arm flexing)
+  and resting state EEG also recorded. Total experiment duration: ~205 minutes per session.'
+paradigm_specific:
+  cue_duration_s: 3.0
+  detected_paradigm: motor_imagery
+  imagery_duration_s: 4.0
+  imagery_tasks:
+  - left_hand
+  - right_hand
+participants:
+  age_max: 35
+  age_min: 24
+  bci_experience: mixed
+  gender:
+    female: 25
+    male: 29
+  handedness:
+    ambidexter: 2
+    left: 2
+    right: 50
+  health_status: healthy
+  n_subjects: 54
+  species: homo sapiens
+performance:
+  accuracy_percent: 71.1
+  accuracy_std: 0.15
+  illiteracy_rate_percent: 53.7
+  session1_accuracy: 70.0
+  session2_accuracy: 72.2
+preprocessing:
+  data_state: raw
+runs_per_session: 1
+sessions_per_subject: 2
+signal_processing:
+  classifiers:
+  - CSP+LDA
+  - CSSP
+  - FBCSP
+  - BSSFO
+  feature_extraction:
+  - CSP
+  - CSSP
+  - FBCSP
+  - BSSFO
+  - log-variance
+  frequency_bands:
+    analyzed_range:
+    - 8.0
+    - 30.0
+    mu:
+    - 8.0
+    - 12.0
+  spatial_filters:
+  - CSP
+  - CSSP
+  - FBCSP
+  - BSSFO
+tags:
+  modality:
+  - Motor
+  pathology:
+  - Healthy
+  type:
+  - Research
