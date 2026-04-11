@@ -1,5 +1,5 @@
 {
-  "Name": "Lee et al. 2019 — Motor Imagery EEG dataset",
+  "Name": "Lee et al. 2019 (Motor Imagery) — EEG dataset and OpenBMI toolbox for three BCI paradigms: an investigation into BCI illiteracy",
   "BIDSVersion": "1.9.0",
   "HEDVersion": "8.4.0",
   "DatasetType": "derivative",
