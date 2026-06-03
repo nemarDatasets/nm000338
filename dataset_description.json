@@ -15,7 +15,7 @@
     "Seong-Whan Lee"
   ],
   "HowToAcknowledge": "This is an Open Access article distributed under the terms of the Creative Commons Attribution License (http://creativecommons.org/licenses/by/4.0/), which permits unrestricted reuse, distribution, and reproduction in any medium, provided the original work is properly cited.",
-  "DatasetDOI": "doi:10.1093/gigascience/giz002",
+  "DatasetDOI": "10.82901/nemar.nm000338",
   "GeneratedBy": [
     {
       "CodeURL": "https://github.com/NeuroTechX/moabb",
@@ -27,6 +27,9 @@
   "SourceDatasets": [
     {
       "DOI": "10.5524/100542"
+    },
+    {
+      "DOI": "doi:10.1093/gigascience/giz002"
     }
   ],
   "Keywords": [
