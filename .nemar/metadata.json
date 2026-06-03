@@ -1,0 +1,100 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "validated",
+  "authors": {
+    "Min-Ho Lee": {
+      "orcid": "0000-0002-5730-1715"
+    },
+    "O-Yeon Kwon": {
+      "orcid": "0000-0001-5498-0540"
+    },
+    "Yong-Jeong Kim": {
+      "orcid": "0000-0003-3038-4087"
+    },
+    "Hong-Kyung Kim": {
+      "orcid": "0000-0002-1786-2729"
+    },
+    "Young-Eun Lee": {
+      "orcid": "0000-0003-2610-7028"
+    },
+    "John Williamson": {
+      "orcid": "0000-0001-7883-9816"
+    },
+    "Siamac Fazli": {
+      "orcid": "0000-0003-3397-0647"
+    },
+    "Seong-Whan Lee": {
+      "orcid": "0000-0002-6249-4996"
+    }
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.5524/100542",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "10.1093/gigascience/giz002",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000338",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000338",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    }
+  ],
+  "title": "Lee et al. 2019 (Motor Imagery) — EEG dataset and OpenBMI toolbox for three BCI paradigms: an investigation into BCI illiteracy",
+  "license": "GPL-3.0",
+  "dataset_type": "derivative",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "65.3 GB (217 files)"
+  ],
+  "formats": [
+    ".bdf",
+    ".json",
+    ".md",
+    ".tsv",
+    ".yaml",
+    ".yml"
+  ],
+  "description": "A comprehensive EEG dataset comprising 54 healthy subjects performing three major brain-computer interface (BCI) paradigms: motor imagery (MI), event-related potential (ERP), and steady-state visually evoked potential (SSVEP) across two sessions. The dataset investigates BCI illiteracy rates and performance variations, revealing that while MI shows the highest illiteracy rate (53.7%), all participants could proficiently control at least one BCI paradigm type. Includes raw EEG recordings at 1000 Hz with 62 channels, electromyography, resting state data, and comprehensive demographic and psychological assessments.",
+  "methods_description": "54 healthy subjects (age 24-35, 25 female, 29 male) participated in two sessions on different days. EEG recorded at 1000 Hz using 62 Ag/AgCl electrodes with BrainAmp amplifier, nose-referenced and grounded to AFz, with impedance maintained below 10 kOhm. Each session included three BCI paradigms: ERP speller (36 symbols), binary motor imagery task (left/right hand grasping), and SSVEP (four target frequencies: 5.45, 6.67, 8.57, 12 Hz). Each paradigm consisted of offline training and online test phases with 100 trials each. Subjects seated 60 cm from 21-inch LCD monitor. Questionnaires collected demographic, physiological, and psychological data. Artifact data and resting state EEG also recorded. Total experiment duration: ~205 minutes per session.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "brain-computer interface"
+    },
+    {
+      "term": "motor imagery"
+    },
+    {
+      "term": "Event-Related Potentials, P300",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
+    },
+    {
+      "term": "steady-state visually evoked potential"
+    },
+    {
+      "term": "BCI illiteracy"
+    },
+    {
+      "term": "signal processing"
+    }
+  ],
+  "source_hash": "5b26c416d1a5e8fc8d9249aa3f8c68bb7b15c4af906fb735e33e73afb92ff7e0"
+}
