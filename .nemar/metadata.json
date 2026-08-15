@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Lee et al. 2019 (Motor Imagery) — EEG dataset and OpenBMI toolbox for three BCI paradigms: an investigation into BCI illiteracy",
-  "description": "A comprehensive EEG dataset comprising 54 healthy subjects performing three major brain-computer interface (BCI) paradigms: motor imagery (MI), event-related potential (ERP), and steady-state visually evoked potential (SSVEP) across two sessions. The dataset investigates BCI illiteracy rates and performance variations, revealing that while MI showed the highest illiteracy rate (53.7%), all participants could proficiently control at least one BCI paradigm type. Data includes 62-channel EEG recordings at 1000 Hz with auxiliary EMG channels, questionnaire responses, and resting-state recordings.",
-  "methods_description": "54 healthy subjects (age 24-35, 25 female, 29 male) participated in two sessions on different days. Each session included three BCI paradigms performed sequentially: ERP speller (36 symbols with face stimuli), binary motor imagery task (left/right hand grasping), and SSVEP (four target frequencies: 5.45, 6.67, 8.57, 12 Hz). EEG recorded at 1000 Hz using 62 Ag/AgCl electrodes with BrainAmp amplifier, nose-referenced and grounded to AFz, with impedance maintained below 10 kOhm. Each paradigm included offline training and online test phases of 100 trials each. Subjects seated 60 cm from a 21-inch LCD monitor. Demographic, physiological, and psychological data collected via questionnaire. Artifact data (eye blinking, eye movements, teeth clenching, arm flexing) and resting-state EEG also recorded.",
+  "description": "A comprehensive EEG dataset comprising 54 healthy subjects performing three major brain-computer interface (BCI) paradigms—motor imagery, event-related potentials, and steady-state visually evoked potentials—across two sessions. The dataset investigates BCI illiteracy rates and performance variations, revealing that motor imagery exhibits the highest illiteracy rate (53.7%) compared to other paradigms, while providing raw EEG recordings at 1000 Hz with 62 channels alongside auxiliary electromyography and resting-state data.",
+  "methods_description": "EEG data were acquired from 54 healthy subjects (age 24-35 years) across two sessions using a 62-channel BrainAmp system with Ag/AgCl electrodes sampled at 1000 Hz, nose-referenced and grounded to AFz. Motor imagery trials consisted of 4-second periods of left or right hand grasping imagery cued by visual arrows, with 3-second preparation periods and 6-second inter-trial intervals. Each session included offline training and online test phases with 100 trials per paradigm. Impedance was maintained below 10 kOhm, and auxiliary recordings included 4-channel electromyography and artifact data.",
   "license": "GPL-3.0",
   "dataset_type": "derivative",
   "authors": {
@@ -37,10 +37,13 @@
       "term": "EEG"
     },
     {
-      "term": "brain-computer interface"
+      "term": "motor imagery"
     },
     {
-      "term": "motor imagery"
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
       "term": "Event-Related Potentials, P300",
@@ -55,7 +58,7 @@
       "term": "BCI illiteracy"
     },
     {
-      "term": "signal classification"
+      "term": "OpenBMI toolbox"
     }
   ],
   "related_identifiers": [
@@ -97,5 +100,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "310247c5c343ac6a9a895af39495911eb211e7243024a72819de876e0d90f921"
+  "source_hash": "62ab511a5b65cc9190e747034eb2c96aeca297a3f42854c5afab016d45ad515b"
 }
