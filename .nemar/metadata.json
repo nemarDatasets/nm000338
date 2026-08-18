@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Lee et al. 2019 (Motor Imagery) — EEG dataset and OpenBMI toolbox for three BCI paradigms: an investigation into BCI illiteracy",
-  "description": "A comprehensive EEG dataset comprising 54 healthy subjects performing three major brain-computer interface (BCI) paradigms—motor imagery, event-related potentials, and steady-state visually evoked potentials—across two sessions. The dataset investigates BCI illiteracy rates and performance variations, revealing that motor imagery exhibits the highest illiteracy rate (53.7%) compared to other paradigms, while providing raw EEG recordings at 1000 Hz with 62 channels alongside auxiliary electromyography and resting-state data.",
-  "methods_description": "EEG data were acquired from 54 healthy subjects (age 24-35 years) across two sessions using a 62-channel BrainAmp system with Ag/AgCl electrodes sampled at 1000 Hz, nose-referenced and grounded to AFz. Motor imagery trials consisted of 4-second periods of left or right hand grasping imagery cued by visual arrows, with 3-second preparation periods and 6-second inter-trial intervals. Each session included offline training and online test phases with 100 trials per paradigm. Impedance was maintained below 10 kOhm, and auxiliary recordings included 4-channel electromyography and artifact data.",
+  "description": "A comprehensive EEG dataset comprising 54 healthy subjects performing three major brain-computer interface (BCI) paradigms—motor imagery, event-related potentials, and steady-state visually evoked potentials—across two sessions. The dataset investigates BCI illiteracy rates and performance variations, revealing that 53.7% of users exhibited motor imagery illiteracy while all participants successfully controlled at least one BCI paradigm type.",
+  "methods_description": "EEG data acquired at 1000 Hz sampling rate from 62 Ag/AgCl electrodes using BrainAmp amplifier with nose reference and AFz ground. Impedance maintained below 10 kOhm. Subjects performed binary left/right hand motor imagery tasks with visual arrow cues over 4-second trials across two sessions, each containing offline training and online test phases of 100 trials. Auxiliary EMG recordings from 4 channels captured arm muscle activity. Resting state and artifact data also recorded.",
   "license": "GPL-3.0",
   "dataset_type": "derivative",
   "authors": {
@@ -37,13 +37,10 @@
       "term": "EEG"
     },
     {
-      "term": "motor imagery"
+      "term": "brain-computer interface"
     },
     {
-      "term": "Brain-Computer Interfaces",
-      "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+      "term": "motor imagery"
     },
     {
       "term": "Event-Related Potentials, P300",
@@ -58,7 +55,7 @@
       "term": "BCI illiteracy"
     },
     {
-      "term": "OpenBMI toolbox"
+      "term": "signal classification"
     }
   ],
   "related_identifiers": [
@@ -100,5 +97,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "62ab511a5b65cc9190e747034eb2c96aeca297a3f42854c5afab016d45ad515b"
+  "source_hash": "9aea55c96a7241eb1d3dd9e45d92ef16b1079646f9a2c52e208acd7de2e6758d"
 }
